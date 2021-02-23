@@ -138,6 +138,12 @@ button, input {
   background: none;
 }
 
+.info-section__container_login {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -735,5 +741,148 @@ button, input {
 
 .footer-partition_contacts .footer-links__container {
   margin-right: 0;
+}
+
+.authorization {
+  height: 85vh;
+  min-height: 488px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px;
+  max-width: 916px;
+  width: 100%;
+}
+
+.authorization__container {
+  background: #fff;
+  height: 458px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.authorization__image-side {
+  width: 50%;
+  margin: 0;
+  height: 100%;
+  background: url("assets/images/jpg/auth.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .authorization__image-side {
+    display: none;
+  }
+}
+
+.authorization__auth-form {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .authorization__auth-form {
+    width: 100%;
+  }
+}
+
+.authorization__inline-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.authorization__inline-container_column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.authorization__title {
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.authorization__btn {
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 0;
+  border: solid 1px #F2F2F2;
+  background: #F2F2F2;
+}
+
+.authorization__btn_login {
+  width: 130px;
+  background: none;
+}
+
+.authorization__btn_login:hover {
+  background: rgba(0, 0, 0, 0.025);
+}
+
+.authorization__btn_register {
+  width: 130px;
+}
+
+.authorization__btn_register:hover {
+  background: rgba(0, 0, 0, 0.025);
+}
+
+.authorization__btn_action {
+  margin-top: 20px;
+  background: #D32531;
+  width: 263px;
+  color: #fff;
+}
+
+.authorization__btn_action:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.authorization__btn_return {
+  background: none;
+  border: none;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.authorization__btn_return:hover {
+  color: #000;
+}
+
+.authorization__input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 220px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 20px;
+  border: solid 1px #F2F2F2;
+}
+
+.authorization__input:first-child {
+  margin-top: 15px;
+}
+
+.authorization__input:hover {
+  border-color: rgba(0, 0, 0, 0.25);
 }
 /*# sourceMappingURL=style.css.map */

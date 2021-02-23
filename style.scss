@@ -132,6 +132,10 @@ button, input {
         border: none;
         background: none;
     }
+
+    &__container_login {
+        justify-content: center;
+    }
 }
 
 .container {
@@ -615,5 +619,127 @@ button, input {
 
     & .footer-links__container {
         margin-right: 0;
+    }
+}
+
+.authorization {
+    height: 85vh;
+    min-height: 488px;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    max-width: 916px;
+    width: 100%;
+
+    &__container {
+        background: #fff;
+        height: 458px;
+        width: 100%;
+        display: flex;
+    }
+
+    &__image-side {
+        width: 50%;
+        margin: 0;
+        height: 100%;
+        background: url('assets/images/jpg/auth.jpg');
+        background-position: center;
+        background-size: cover;
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__auth-form {
+        width: 50%;
+        
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+
+    &__inline-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+
+        &_column {
+            flex-direction: column;
+        }
+    }
+
+    &__title {
+        margin-top: 40px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    &__btn {
+        cursor: pointer;
+        outline: none;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 15px 0;
+        border: solid 1px #F2F2F2;
+        background: #F2F2F2;
+    
+        &_login {
+            width: 130px;
+            background: none;
+
+            &:hover {
+                background: rgba($color: #000, $alpha: 0.025);
+            }
+        }
+
+        &_register {
+            width: 130px;
+
+            &:hover {
+                background: rgba($color: #000, $alpha: 0.025);
+            }
+        }
+
+        &_action {
+            margin-top: 20px;
+            background: $red_accent_color;
+            width: 263px;
+            color: #fff;
+
+            &:hover {
+                color:rgba($color: #fff, $alpha: 0.75);
+            }
+        }
+
+        &_return {
+            background: none;
+            border: none;
+            color: rgba($color: #000, $alpha: 0.75);
+
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+
+    &__input {
+        appearance: none;
+        width: 220px;
+        outline: none;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 15px 20px;
+        border: solid 1px #F2F2F2;
+
+        &:first-child {
+            margin-top: 15px;
+        }
+
+        &:hover {
+            border-color: rgba($color: #000, $alpha: 0.25);
+        }
     }
 }
