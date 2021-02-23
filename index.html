@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uncos</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <section class="info-section">
+            <div class="container">
+                <a href="#"><img src="./assets/images/svg/logo.svg" alt="" class="info-section__logo"></a>
+                <ul class="list info-section__list">
+                    <li class="list-item info-section__list-item"><i class="ri-calendar-todo-line"></i> 17 Февраля, 18:25</li>
+                    <li class="list-item info-section__list-item"><i class="ri-sun-cloudy-line"></i> Москва, -13°C</li>
+                    <li class="list-item info-section__list-item"><i class="ri-money-dollar-circle-line"></i> 74,12</li>
+                    <li class="list-item info-section__list-item"><i class="ri-money-euro-circle-line"></i> 89,20</li>
+                    <li class="list-item info-section__list-item"><i class="ri-bit-coin-line"></i> 51 085,01 $</li>
+                </ul>
+                <div class="info-section__auth">
+                    <button class="info-section__btn info-section__register-btn">Зарегистрироваться</button>
+                    <button class="info-section__btn info-section__login-btn">Войти</button>
+                    <button class="info-section__btn info-section__mobile-btn"><i class="ri-login-box-line"></i></button>
+                </div>
+            </div>
+        </section>
+        <section class="category-bar">
+            <nav class="container category-bar__container">
+                <ul class="list category-bar__list">
+                    <li class="list-item category-bar__list-item">Новости</li>
+                    <li class="list-item category-bar__list-item">Тренды</li>
+                    <li class="list-item category-bar__list-item">Политика</li>
+                    <li class="list-item category-bar__list-item">Бизнес</li>
+                    <li class="list-item category-bar__list-item">Наука</li>
+                    <li class="list-item category-bar__list-item">Культура</li>
+                    <li class="list-item category-bar__list-item">Фильмы</li>
+                    <li class="list-item category-bar__list-item">Сериалы</li>
+                    <li class="list-item category-bar__list-item">Игры</li>
+                    <li class="list-item category-bar__list-item">Технологии</li>
+                    <li class="list-item category-bar__list-item">Спорт</li>
+                </ul>
+                <button class="category-bar__more-btn"><i class="ri-menu-2-line"></i></button>
+                <div class="category-bar__search-container">
+                    <input class="category-bar__search" type="text" placeholder="Поиск новостей" />
+                    <i class="ri-search-line"></i>
+                </div>
+            </nav>
+        </section>
+        <section class="info-section info-section_xs">
+            <ul class="list info-section__list">
+                <li class="list-item info-section__list-item"><i class="ri-calendar-todo-line"></i> 17.02.21, 18:25</li>
+                <li class="list-item info-section__list-item"><i class="ri-sun-cloudy-line"></i> Москва, -13°C</li>
+                <li class="list-item info-section__list-item"><i class="ri-money-dollar-circle-line"></i> 74,12</li>
+                <li class="list-item info-section__list-item"><i class="ri-money-euro-circle-line"></i> 89,20</li>
+                <li class="list-item info-section__list-item"><i class="ri-bit-coin-line"></i> 51 085,01 $</li>
+            </ul>
+        </section>
+        <section class="search-bar">
+            <div class="search-bar__container">
+                <input class="category-bar__search" type="text" placeholder="Поиск новостей" />
+                <i class="ri-search-line"></i>
+            </div>
+        </section>
+    </header>
+    <main class="main">
+        <div class="container main__container">
+            <h1 class="head-title">Главное за день</h1>
+            <div class="articles-container">
+                <section class="side-bar">
+                    <h3 class="side-bar__title">Популярное</h3>
+                    <div class="side-bar__item-container">
+                        <p class="side-bar__item-meta">18:25</p>
+                        <p class="side-bar__item">В Германии назвали водную блокаду Крыма "средневековыми методами осады"</p>
+                        <p class="side-bar__item-meta side-bar__item-meta_tag">Новости, Политика</p>
+                    </div>
+                    <div class="side-bar__item-container">
+                        <p class="side-bar__item-meta">14:21</p>
+                        <p class="side-bar__item">Зеленский заявил о невыполнении Украиной требований МВФ</p>
+                        <p class="side-bar__item-meta side-bar__item-meta_tag">Новости, Политика</p>
+                    </div>
+                    <div class="side-bar__item-container">
+                        <p class="side-bar__item-meta">13:56</p>
+                        <p class="side-bar__item">Оценены шансы Украины в случае войны с Россией</p>
+                        <p class="side-bar__item-meta side-bar__item-meta_tag">Новости, Политика</p>
+                    </div>
+                    <div class="side-bar__item-container">
+                        <p class="side-bar__item-meta">12:18</p>
+                        <p class="side-bar__item">В Москве выявили 1723 новых случая заражения коронавирусом</p>
+                        <p class="side-bar__item-meta side-bar__item-meta_tag">Новости, Политика</p>
+                    </div>
+                    <div class="side-bar__item-container">
+                        <p class="side-bar__item-meta">09:59</p>
+                        <p class="side-bar__item">В ЛНР заявили об атаке силовиков при помощи ударного беспилотника</p>
+                        <p class="side-bar__item-meta side-bar__item-meta_tag">Новости, Политика</p>
+                    </div>
+                </section>
+                <section class="content">
+                    <div class="article-container article-container_lg">
+                        <div class="article article_lg">
+                            <div class="darken"></div>
+                            <div class="text-info text-info_lg">
+                                <div class="meta-info">
+                                    <p class="publication-time publication-time_lg">Сегодня, 18:43</p>
+                                    <ul class="list">
+                                        <li class="list-item meta-info__tag-item">Бизнес</li>
+                                    </ul>
+                                </div>
+                                <div class="article-text-container article-text-container_lg">
+                                    <h2 class="article-title article-title_lg">Илон Маск пригласил Владимира Путина к диалогу в ClubHоuse </h2>
+                                    <p class="article-subtitle article-subtitle_lg">Маск разместил два твита 2 твита с разницей в 12 минут в субботу около полуночи по московскому времени.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-container article-container_md">
+                        <div class="article article_md">
+                            <div class="text-info">
+                                <div class="meta-info">
+                                    <p class="publication-time">Сегодня, 18:43</p>
+                                    <ul class="list">
+                                        <li class="list-item meta-info__tag-item">Бизнес</li>
+                                    </ul>
+                                </div>
+                                <h2 class="article-title">Илон Маск пригласил Владимира Путина к диалогу в ClubHоuse</h2>
+                                <p class="article-subtitle">Маск разместил два твита 2 твита с разницей в 12 минут в субботу около полуночи по московскому времени.</p>
+                            </div>
+                            <div class="article__preview article__preview_md"></div>
+                        </div>
+                        <div class="article article_md">
+                            <div class="text-info">
+                                <div class="meta-info">
+                                    <p class="publication-time">Сегодня, 18:43</p>
+                                    <ul class="list">
+                                        <li class="list-item meta-info__tag-item">Технологии</li>
+                                    </ul>
+                                </div>
+                                <h2 class="article-title">Арне Соренсон сделал Marriott крупнейшей сетью отелей</h2>
+                                <p class="article-subtitle">Он возглавил семейное предприятие, не входя в семью, и превратил его в самую крупную и конкурентоспособную сеть гостиниц в мире.</p>
+                            </div>
+                            <div class="article__preview article__preview_md"></div>
+                        </div>
+                        <div class="article article_md">
+                            <div class="text-info">
+                                <div class="meta-info">
+                                    <p class="publication-time">Сегодня, 18:43</p>
+                                    <ul class="list">
+                                        <li class="list-item meta-info__tag-item">Бизнес</li>
+                                    </ul>
+                                </div>
+                                <h2 class="article-title">Илон Маск пригласил Владимира Путина к диалогу в ClubHоuse</h2>
+                                <p class="article-subtitle">Маск разместил два твита 2 твита с разницей в 12 минут в субботу около полуночи по московскому времени.</p>
+                            </div>
+                            <div class="article__preview article__preview_md"></div>
+                        </div>
+                        <div class="article article_md">
+                            <div class="text-info">
+                                <div class="meta-info">
+                                    <p class="publication-time">Сегодня, 18:43</p>
+                                    <ul class="list">
+                                        <li class="list-item meta-info__tag-item">Бизнес</li>
+                                    </ul>
+                                </div>
+                                <h2 class="article-title">Илон Маск пригласил Владимира Путина к диалогу в ClubHоuse</h2>
+                                <p class="article-subtitle">Маск разместил два твита 2 твита с разницей в 12 минут в субботу около полуночи по московскому времени.</p>
+                            </div>
+                            <div class="article__preview article__preview_md"></div>
+                        </div>
+                        <div class="article article_md">
+                            <div class="text-info">
+                                <div class="meta-info">
+                                    <p class="publication-time">Сегодня, 18:43</p>
+                                    <ul class="list">
+                                        <li class="list-item meta-info__tag-item">Бизнес</li>
+                                    </ul>
+                                </div>
+                                <h2 class="article-title">Илон Маск пригласил Владимира Путина к диалогу в ClubHоuse</h2>
+                                <p class="article-subtitle">Маск разместил два твита 2 твита с разницей в 12 минут в субботу около полуночи по московскому времени.</p>
+                            </div>
+                            <div class="article__preview article__preview_md"></div>
+                        </div>
+                        <div class="article article_md">
+                            <div class="text-info">
+                                <div class="meta-info">
+                                    <p class="publication-time">Сегодня, 18:43</p>
+                                    <ul class="list">
+                                        <li class="list-item meta-info__tag-item">Бизнес</li>
+                                    </ul>
+                                </div>
+                                <h2 class="article-title">Илон Маск пригласил Владимира Путина к диалогу в ClubHоuse</h2>
+                                <p class="article-subtitle">Маск разместил два твита 2 твита с разницей в 12 минут в субботу около полуночи по московскому времени.</p>
+                            </div>
+                            <div class="article__preview article__preview_md"></div>
+                        </div>
+                        <div class="article article_md">
+                            <div class="text-info">
+                                <div class="meta-info">
+                                    <p class="publication-time">Сегодня, 18:43</p>
+                                    <ul class="list">
+                                        <li class="list-item meta-info__tag-item">Бизнес</li>
+                                    </ul>
+                                </div>
+                                <h2 class="article-title">Илон Маск пригласил Владимира Путина к диалогу в ClubHоuse</h2>
+                                <p class="article-subtitle">Маск разместил два твита 2 твита с разницей в 12 минут в субботу около полуночи по московскому времени.</p>
+                            </div>
+                            <div class="article__preview article__preview_md"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="more-articles-btn-container">
+                <button class="more-articles-btn">Больше новостей</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <section class="footer-content">
+            <div class="footer-partion footer-partition_nav">
+                <h3 class="footer-links__title">Навигация</h3>
+                <div class="footer-links">
+                    <div class="footer-links__container">
+                        <p class="footer-links__item">Новости</p>
+                        <p class="footer-links__item">Тренды</p>
+                        <p class="footer-links__item">Политика</p>
+                        <p class="footer-links__item">Бизнес</p>
+                    </div>
+                    <div class="footer-links__container">
+                        <p class="footer-links__item">Наука</p>
+                        <p class="footer-links__item">Культура</p>
+                        <p class="footer-links__item">Фильмы</p>
+                        <p class="footer-links__item">Сериалы</p>
+                    </div>
+                    <div class="footer-links__container">
+                        <p class="footer-links__item">Игры</p>
+                        <p class="footer-links__item">Технологии</p>
+                        <p class="footer-links__item">Спорт</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-partion footer-partition_contacts">
+                <h3 class="footer-links__title">Обратная связь</h3>
+                <div class="footer-links">
+                    <div class="footer-links__container">
+                        <p class="footer-links__item"><i class="ri-github-fill"></i><i class="ri-telegram-fill"></i></p>
+                        <p class="footer-links__item">saizaax.off@gmail.com</p>
+                        <p class="footer-links__item">vk.com/saizaax</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
