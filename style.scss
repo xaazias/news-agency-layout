@@ -345,6 +345,7 @@ button, input {
 .head-title {
     font-size: 38px;
     color: rgba($color: #000, $alpha: 0.15);
+    margin-left: 10px;
 }
 
 .content-container {
@@ -495,10 +496,24 @@ button, input {
     }
 
     &_md {
+        min-width: 290px;
         min-height: 165px;
         flex: 1 0 30%;
         flex-direction: column;
         padding-bottom: 300px;
+    }
+
+    &_new {
+        padding-bottom: 0;
+
+        &-btn-container {
+            margin: 20px;
+            height: 100%;
+            border: solid 1px #F2F2F2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     &-title {
@@ -704,7 +719,7 @@ button, input {
     }
 }
 
-.more-articles-btn {
+.red-articles-btn {
     color: #fff;
     font-size: 16px;
     font-weight: 500;
@@ -718,14 +733,14 @@ button, input {
         color:rgba($color: #fff, $alpha: 0.75);
         cursor: pointer;
     }
+}
 
-    &-container {
-        width: 100%;
-        margin-bottom: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.more-articles-btn-container {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer {
@@ -917,6 +932,38 @@ button, input {
 
         &:hover {
             border-color: rgba($color: #000, $alpha: 0.25);
+        }
+    }
+}
+
+.profile-info {
+    
+    &__username {
+        font-size: 18px;
+        font-weight: 500;
+        color: #000;
+        margin: 0;
+
+        & > i {
+            position: relative;
+            top: 3px;
+            color: $red_accent_color;
+        }
+    }
+
+    &__logout {
+        outline: none;
+        margin: 0;
+        background: none;
+        border: none;
+        color: rgba($color: #000, $alpha: 0.75);
+        font-weight: 500;
+        padding: 0;
+        width: 100%;
+
+        &:hover {
+            cursor: pointer;
+            color: #000;
         }
     }
 }
