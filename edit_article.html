@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uncos</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <section class="info-section">
+            <div class="container">
+                <a href="#"><img src="./assets/images/svg/logo.svg" alt="" class="info-section__logo"></a>
+                <ul class="list info-section__list">
+                    <li class="list-item info-section__list-item info-section__nav-item">На главную</li>
+                    <li class="list-item info-section__list-item info-section__nav-item">Панель редактирования</li>
+                </ul>
+                <div class="info-section__auth">
+                    <div class="profile-info">
+                        <p class="profile-info__username">Uncos User <i class="ri-shield-flash-line"></i></p>
+                        <button class="profile-info__logout">ВЫХОД</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info-section info-section_xs">
+            <ul class="list info-section__list">
+                <li class="list-item info-section__list-item info-section__nav-item">На главную</li>
+                <li class="list-item info-section__list-item info-section__nav-item">Панель редактирования</li>
+            </ul>
+        </section>
+    </header>
+    <main class="main">
+        <div class="container main__container">
+            <div class="content-container content-container_article-edit">
+                <section class="content content_article-edit">
+                    <div class="data-input">
+                        <div class="data-input__container data-input__container_meta">
+                            <div class="data-input__container_meta-container data-input__container_image">
+                                <label class="data-input__input-label">
+                                    <i class="ri-image-add-fill"></i>
+                                    <p>Загрузить обложку</p>
+                                    <input type="file" accept="image/*" class="data-input__input data-input__input_image" />
+                                </label>
+                            </div>
+                            <div class="data-input__container_meta-container">
+                                <p class="data-input__title">Заголовок</p>
+                                <input type="text" class="data-input__input data-input__input_title" placeholder="Введите заголовок статьи" />
+                            </div>
+                            <div class="data-input__container_meta-container">
+                                <p class="data-input__title">Подзаголовок</p>
+                                <input type="text" class="data-input__input data-input__input_subtitle" placeholder="Введите подзаголовок статьи" />
+                            </div>
+                            <div class="data-input__container_meta-container">
+                                <p class="data-input__title">Категория</p>
+                                <input type="text" class="data-input__input data-input__input_tags" placeholder="Введите категорию статьи" />
+                            </div>
+                            <div class="data-input__container_content-container">
+                                <textarea class="data-input__textarea autoExpand" placeholder="Введите текст"></textarea>
+                                <div class="data-input__delete-icon"><i class="ri-delete-bin-line"></i></div>
+                            </div>
+                            <div class="data-input__container_content-container">
+                                <div class="data-input__image"></div>
+                                <div class="data-input__delete-icon"><i class="ri-delete-bin-line"></i></div>
+                            </div>
+                            <div class="data-input__container_content-container">
+                                <div class="data-input__quote">
+                                    <textarea class="data-input__textarea autoExpand" placeholder="Введите текст цитаты" rows="1"></textarea>
+                                </div>
+                                <div class="data-input__delete-icon"><i class="ri-delete-bin-line"></i></div>
+                            </div>
+                            <div class="data-input__container_content-container">
+                                <div class="data-input__link">
+                                    <textarea class="data-input__textarea data-input__textarea_link" placeholder="Введите название источника" rows="1"></textarea>
+                                    <textarea class="data-input__textarea data-input__textarea_url" placeholder="Вставьте ссылку" rows="1"></textarea>
+                                </div>
+                                <div class="data-input__delete-icon"><i class="ri-delete-bin-line"></i></div>
+                            </div>
+                            <div class="data-input__container_content-container">
+                                <div class="data-input__video">
+                                    <textarea class="data-input__textarea data-input__textarea_video" placeholder="Вставьте ссылку на YouTube видео" rows="1"></textarea>
+                                </div>
+                                <div class="data-input__delete-icon"><i class="ri-delete-bin-line"></i></div>
+                            </div>
+                        </div>
+                        <div class="data-input__instruments">
+                            <div class="data-input__instruments-item"><i class="ri-text"></i></div>
+                            <div class="data-input__instruments-item"><i class="ri-double-quotes-l"></i></div>
+                            <div class="data-input__instruments-item">
+                                <label class="data-input__instruments-item-label">
+                                    <i class="ri-image-fill"></i>
+                                    <input type="file" accept="image/*" />
+                                </label>
+                            </div>
+                            <div class="data-input__instruments-item"><i class="ri-external-link-line"></i></div>
+                            <div class="data-input__instruments-item"><i class="ri-live-line"></i></div>
+                        </div>
+                        <div class="data-input__action">
+                            <div class="data-input__action-buttons">
+                                <button class="data-input__action-buttons_btn data-input__action-buttons_publish">Опубликовать</button>
+                                <button class="data-input__action-buttons_btn data-input__action-buttons_save">Сохранить черновик</button>
+                            </div>
+                            <button class="data-input__action-buttons_btn data-input__action-buttons_delete">Удалить и вернуться</button>
+                        </div>
+                    </div>            
+                </section>
+                <section class="content content_overview">
+                    <div class="article-info article-info_overview">
+                        <div class="meta-info">
+                            <p class="publication-time">Сегодня, 18:43</p>
+                            <ul class="list">
+                                <li class="list-item meta-info__tag-item">Бизнес</li>
+                            </ul>
+                        </div>
+                        <h2 class="article-title article-title_overview">Илон Маск пригласил Владимира Путина к диалогу в ClubHоuse</h2>
+                        <p class="article-subtitle article-subtitle_overview">Маск разместил два твита 2 твита с разницей в 12 минут в субботу около полуночи по московскому времени.</p>
+                        <div class="article-image"></div>
+                        <p class="article-text">Первый твит обращён к англоязычному твитеру Президента России, где предприниматель в учтивой форме уточняет не хочет ли первое лицо присоединится к диалогу в набирающей популярность сети Clubhouse.</p>
+                        <p class="article-quote">«Было бы большой честью поговорить с вами»</p>
+                        <p class="article-text">Ждем официальный ответ на предложение со стороны Кремля.</p>
+                        <div class="article-link">
+                            <div class="article-link__text-container">
+                                <a class="article-link__text-container__title" href="#">Ссылка на пост в Twitter</a>
+                                <p class="article-link__text-container__url">twitter.com</p>
+                            </div>
+                            <div class="article-link__icon-container">
+                                <i class="ri-external-link-line"></i>
+                            </div>
+                        </div>
+                        <div class="article-video">
+                            <iframe height="400" src="https://www.youtube.com/embed/J2U9Hmmpqhc"></iframe>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <section class="footer-content">
+            <div class="footer-partion footer-partition_nav">
+                <h3 class="footer-links__title">Навигация</h3>
+                <div class="footer-links">
+                    <div class="footer-links__container">
+                        <p class="footer-links__item">Новости</p>
+                        <p class="footer-links__item">Тренды</p>
+                        <p class="footer-links__item">Политика</p>
+                        <p class="footer-links__item">Бизнес</p>
+                    </div>
+                    <div class="footer-links__container">
+                        <p class="footer-links__item">Наука</p>
+                        <p class="footer-links__item">Культура</p>
+                        <p class="footer-links__item">Фильмы</p>
+                        <p class="footer-links__item">Сериалы</p>
+                    </div>
+                    <div class="footer-links__container">
+                        <p class="footer-links__item">Игры</p>
+                        <p class="footer-links__item">Технологии</p>
+                        <p class="footer-links__item">Спорт</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-partion footer-partition_contacts">
+                <h3 class="footer-links__title">Обратная связь</h3>
+                <div class="footer-links">
+                    <div class="footer-links__container">
+                        <p class="footer-links__item"><i class="ri-github-fill"></i><i class="ri-telegram-fill"></i></p>
+                        <p class="footer-links__item">saizaax.off@gmail.com</p>
+                        <p class="footer-links__item">vk.com/saizaax</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
