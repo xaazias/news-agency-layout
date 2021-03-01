@@ -696,6 +696,15 @@ button, input, textarea {
         }
     }
 
+    &-author {
+        margin: 20px 0;
+
+        &__text {
+            font-weight: 500;
+            color:rgba($color: #000, $alpha: 0.75);
+        }
+    }
+
     &-image {
         margin: 30px 0;
         min-height: 500px;
